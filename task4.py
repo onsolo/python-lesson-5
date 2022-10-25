@@ -1,5 +1,3 @@
-from itertools import groupby
-
 table = [['', '', ''], ['', '', ''], ['', '', '']]
 
 
@@ -30,7 +28,7 @@ def CheckWin():
 
     # Проверка столбиков
     for row in zip(table[0], table[1], table[2]):
-        if len(list(groupby(row))) == 1 and all(x != '' for x in row):
+        if len(set(row)) == 1 and all(x != '' for x in row):
             return 1
 
     # Проверка диагоналей

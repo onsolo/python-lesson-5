@@ -36,7 +36,7 @@ def CheckWin():
     diagonal2 = [table[0][2], table[1][1], table[2][0]]
     if len(set(diagonal1)) == 1 and all(x != '' for x in diagonal1):
         return 1
-    if len(set(diagonal2)) == 1 and all(x != '' for x in diagonal1):
+    if len(set(diagonal2)) == 1 and all(x != '' for x in diagonal2):
         return 1
 
 
